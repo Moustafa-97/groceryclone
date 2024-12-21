@@ -27,6 +27,22 @@ a {
   text-decoration: none;
 }
 
+input:focus {
+  border-color: rgba(131, 15, 176, 1);
+  box-shadow: 0 0 5px rgba(131, 15, 176, 1); 
+  background-color: #f9f9f9; 
+}
+
+/* Style when input is active (clicked) */
+input:active {
+  border-color: rgba(131, 15, 176, 1); /* Different color for active state */
+}
+
+/* For inputs with specific focus-visible requirements */
+input:focus-visible {
+  outline: 2px solid rgba(131, 15, 176, 1); /* Ensure visible focus for accessibility */
+}
+
 .pageContainer {
   width: 100%;
   height: fit-content;
