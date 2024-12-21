@@ -17,8 +17,8 @@ const quicksand = Quicksand({
   variable: "--quicksand",
 });
 export const metadata: Metadata = {
-  title: "YLLAAA",
-  description: "YLLAAA landing page",
+  title: "GROCERY",
+  description: "GROCERY",
 };
 
 export default function RootLayout({
