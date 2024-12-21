@@ -3,10 +3,10 @@ import React from "react";
 import styles from "./wholesale.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import mission from "@/../public/wholesale/icons/mission.svg";
-import vision from "@/../public/wholesale/icons/vision.svg";
+import mission from "../../../public/wholeSale/icons/mission.svg";
+import vision from "../../../public/wholeSale/icons/vision.svg";
 import mainImage from "@/../public/wholeSale/Image.png";
-import custumors from "@/../public/wholesale/custumors.svg";
+import custumors from "../../../public/wholeSale/custumors.svg";
 function Wholesale() {
   const t = useTranslations("wholesale");
   return (
