@@ -1,0 +1,65 @@
+{
+  "homeHero": {
+    "header1": "Don’t Miss Our Daily Offers",
+    "subHeader": "Products delivered to your doorstep.",
+    "price": "PRICE",
+    "delivery": "Delivery in",
+    "min": "MINS",
+    "tea": "Tea",
+    "grocery_basket": "Grocery basket",
+    "coffee": "Coffee"
+  },
+  "quality": {
+    "title": "Products",
+    "subTitle1": "Quality?",
+    "subTitle2": "Guaranteed!",
+    "paragraph": "Discover the essence of Arabian flavors. Handpicked quality for your markets and restaurants. Fresh, authentic, and ready to elevate your dishes",
+    "btn": "Our Products"
+  },
+  "wholesale": {
+    "titleR1": "finest",
+    "titleS": "wholesale",
+    "titleR2": "food",
+    "paragraph": "Bringing the finest wholesale Arabian food to Spain, we specialize in supplying markets and restaurants with authentic, high-quality ingredients. From spices to snacks, we ensure freshness, tradition, and excellence in every product we deliver.",
+    "btn": "Our Products",
+    "our": "Our",
+    "mission": "Mission",
+    "missionParagraph": "Delivering premium wholesale food with excellence, meeting the needs of markets and restaurants.",
+    "vision": "Vision",
+    "visionParagraph": "To be the leading supplier of authentic Arabian products, connecting tradition with quality across Spain."
+  },
+  "featured": {
+    "title": "Our",
+    "titleS": "Featured",
+    "card1": "24/7 Customer Support",
+    "card2": "Weekly Discount",
+    "card3": "In-Store Pickup"
+  },
+  "explore": {
+    "title": "Explore",
+    "peach": "Peach",
+    "lemon": "Lemon",
+    "orange": "Orange",
+    "apple": "Apple",
+    "banana": "Banana",
+    "pineapple": "Pineapple",
+    "items": "Items"
+  },
+  "testimo": {
+    "title1": "What Our",
+    "title2": "Clients Say",
+    "title3": "About Us",
+    "lemon": "Lemon",
+    "orange": "Orange",
+    "apple": "Apple",
+    "banana": "Banana",
+    "pineapple": "Pineapple",
+    "items": "Items"
+  },
+  "headerFooter": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "products": "Products"
+  }
+}

@@ -1,0 +1,162 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 102px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 26px;
+  z-index: 100;
+}
+.navbarContainer {
+  width: 86%;
+  display: flex;
+  align-items: center;
+}
+.navbarLogo {
+  width: 25%;
+}
+.navbarLinks {
+  width: 50%;
+  justify-self: flex-start;
+}
+.navbarLinks ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.navbarLinks ul li a {
+  color: var(--neutral-1);
+  font-family: var(--space);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration-skip-ink: none;
+  text-wrap: balance;
+}
+.navbarButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 22px;
+}
+.navbarButtons .navbarContact {
+  font-family: var(--monta);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: var(--Indigo-300);
+}
+
+.navbarButtons .navbarSignup {
+  font-family: var(--monta);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--Indigo-300);
+  padding: 20px 28px;
+  background-color: var(--neutral-1);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.navbarResponsive {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbarLinks,
+  .navbarButtons {
+    display: none;
+  }
+  .navbarResponsive {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    justify-content: flex-end;
+    justify-self: flex-end;
+  }
+  .menuContainer {
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    width: 60vw;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 1000;
+    background-color: var(--Indigo-400);
+    transition: right 0.4s;
+    -webkit-transition: right 0.4s;
+    -moz-transition: right 0.4s;
+    -ms-transition: right 0.4s;
+    -o-transition: right 0.4s;
+  }
+  .menuContainer ul {
+    list-style: none;
+    padding-top: 20%;
+    height: 50%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 5px solid var(--Indigo-300);
+  }
+  .menuContainer ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 10;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  .menuContainer ul li a {
+    padding-left: 15px;
+  }
+  .bgCurved::before,
+  .bgCurved::after {
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    left: 95%;
+    width: 10%;
+    height: 30%;
+    background-color: var(--Indigo-300);
+    z-index: 1;
+    border-radius: 0% 0% 0% 100%;
+    -webkit-border-radius: 0% 0% 0% 100%;
+    -moz-border-radius: 0% 0% 0% 100%;
+    -ms-border-radius: 0% 0% 0% 100%;
+    -o-border-radius: 0% 0% 0% 100%;
+  }
+  .bgCurved::before {
+    top: -15%;
+    border-radius: 100% 0% 0% 0%;
+    -webkit-border-radius: 100% 0% 0% 0%;
+    -moz-border-radius: 100% 0% 0% 0%;
+    -ms-border-radius: 100% 0% 0% 0%;
+    -o-border-radius: 100% 0% 0% 0%;
+  }
+  .navbarLogo {
+    height: 26px;
+  }
+
+  /* When the menu is open, move it into view */
+  .open {
+    right: 0;
+  }
+}

@@ -1,0 +1,57 @@
+.heroSection{
+  width: 100%;
+  height: fit-content;
+  /* position: relative; */
+  min-height: fit-content;
+  margin: 0px auto 76px auto;
+}
+
+
+.saleSection{
+  width: 86%;
+  height: fit-content;
+  position: relative;
+  min-height: fit-content;
+  margin: 0px auto 104px auto;
+}
+.featured {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  min-height: fit-content;
+  margin: 0px auto 124px auto;
+}
+.saveSection{
+  width: 86%;
+  height: fit-content;
+  position: relative;
+  min-height: fit-content;
+  margin: 0px auto 147px auto;
+}
+.testSection{
+  width: 86%;
+  height: fit-content;
+  position: relative;
+  min-height: fit-content;
+  margin: 0px auto 124px auto;
+}
+@media screen and (max-width: 768px) {
+  .heroSection{
+    margin: 0px auto 40px auto;
+  }
+  .saleSection{
+    width: 92%;
+    margin: 0px auto 73px auto;
+  }
+  .featured {
+    margin: 0px auto 79px auto;
+  }
+  .saveSection{
+    width: 92%;
+    margin: 0px auto 122px auto;
+  }
+  .testSection{
+    width: 92%;
+    margin: 0px auto 40px auto;
+  }
+}

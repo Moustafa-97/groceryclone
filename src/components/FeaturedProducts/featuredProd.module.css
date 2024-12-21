@@ -1,0 +1,105 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.header {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h2 {
+  font-family: var(--urbanist);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  text-align: left;
+  color: rgba(128, 10, 174, 1);
+}
+.filterList ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.filterList ul li {
+  cursor: pointer;
+}
+.filterList ul li p {
+  font-family: var(--quicksand);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.item {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border: 1px solid rgba(128, 10, 174, 1);
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  row-gap: 24px;
+  column-gap: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+.products{
+  grid-template-columns: repeat(4, 1fr);
+}
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header h2 {
+    font-family: var(--urbanist);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: left;
+    color: rgba(128, 10, 174, 1);
+    margin-bottom: 10px;
+  }
+  .filterList ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  .filterList ul li {
+    cursor: pointer;
+  }
+  .filterList ul li p {
+    font-family: var(--quicksand);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  
+  }
+}
+@media screen and (max-width: 430px) {
+  .products{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

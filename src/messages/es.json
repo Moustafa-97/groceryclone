@@ -1,0 +1,128 @@
+{
+    "homeHero": {
+      "header1": "Lanza tu startup: gana",
+      "header2": " para el desarrollo del MVP",
+      "subHeader": "¡10.000 € Pueden Ser Tuyos – Lleva Tu Startup al Siguiente Nivel!"
+    },
+    "aboutUs": {
+      "title": "Sobre Nosotros",
+      "subTitle": "El Socio de Tu Startup para el Talento, el Crecimiento y el Éxito",
+      "paragraph": "En Yllaaa, creemos en empoderar a las startups para triunfar conectándolas con el talento y los recursos adecuados. Nuestra plataforma va más allá del freelancing tradicional, ofreciendo apoyo dedicado a través de gestores de cuentas experimentados, un proceso de selección impecable y un enfoque en la colaboración. Estamos aquí para ayudarte a construir y crecer con confianza, en cada paso del camino.",
+      "buttonText": "Más Sobre Nosotros",
+      "projects": "Proyectos",
+      "months": "Meses",
+      "clients": "Clientes",
+      "profs": "Profesionales"
+    },
+    "proccess": {
+      "sectionLable": "NUESTRO PROCESO",
+      "sectionTitle": "Nuestro Proceso para Empoderar Tu",
+      "sectionTitleSpecialWord": "Visión",
+      "description": "Yalla adopta un proceso dinámico y flexible, priorizando la colaboración y soluciones personalizadas para cada cliente.",
+      "title1": "Elige el cuerpo de tu negocio",
+      "paragraph1": "Elige un gestor de cuentas que hable tu idioma y entienda tu cultura empresarial.",
+      "title2": "Análisis Profundo",
+      "paragraph2": "Tómate un café virtual o real con tu gestor de cuentas; escuchamos, estrategizamos y diseñamos un plan que resuene con tu visión.",
+      "title3": "Planificación con IA",
+      "paragraph3": "Deja de adivinar. Nuestra herramienta impulsada por IA presenta un plan personalizado, transparente, con presupuestos y plazos recomendados.",
+      "title4": "Equipo de Clase Mundial",
+      "paragraph4": "Nuestro avanzado algoritmo te asigna un equipo de talento egipcio de Clase Mundial, asegurando que tu proyecto alcance nuevos horizontes."
+    },
+    "clients": {
+      "sectionLable": "Para Startups",
+      "sectionTitle": "Valida Tu Idea con YLLAAA",
+      "description": "Construir un MVP de manera eficiente es la mejor forma de acelerar tu idea a la realidad. Nuestra aplicación está diseñada para ser la solución más asequible, rápida y de mejor calidad para el desarrollo de MVP en el mercado.",
+      "buttonText1": "Eficiencia de Tiempo",
+      "buttonSubtext1": "Empieza a Contratar",
+      "buttonText2": "Costo-Efectividad",
+      "buttonSubtext2": "Empieza a Contratar",
+      "buttonText3": "Garantía de Calidad",
+      "buttonSubtext3": "Empieza a Contratar"
+    },
+    "team": {
+      "sectionTitle": "Equipo",
+      "description": "Mentes Apasionadas, Soluciones Creativas. Descubre el equipo detrás de YLLAAA.",
+      "buttonText": "Nuestro Equipo"
+    },
+    "talent": {
+      "sectionLable": "Para el Talento",
+      "sectionTitle": "Encuentra un Buen Trabajador",
+      "description": "Conecta con clientes con quienes te apasiona trabajar y lleva tu carrera a nuevos horizontes.",
+      "text1": "Muestra tu talento al mundo",
+      "text2": "Explora diferentes formas de ganar",
+      "text3": "Controla cuándo, dónde y cómo trabajas",
+      "buttonText": "Empieza Ahora"
+    },
+    "aboutHero": {
+      "sectionLable": "Misión",
+      "sectionTitleW1": "Empoderar las Conexiones Entre",
+      "sectionTitleB1": "Clientes",
+      "sectionTitleW2": "y",
+      "sectionTitleB2": "Freelancers",
+      "description": "En Yllaaa, conectamos freelancers y empresas, con el apoyo de gestores de proyectos, para fomentar la colaboración, la flexibilidad y el crecimiento. Nuestra plataforma crea un ecosistema donde el talento y la oportunidad se encuentran, empoderando a ambos para prosperar."
+    },
+    "business": {
+      "sectionLable": "Para Empresas",
+      "subHeader": "Impulsa tus Proyectos con ",
+      "specialSubHeader": "Trabajadores Independientes",
+      "paragraph": "Comienza a trabajar con los mejores freelancers en programación, diseño y marketing. Ahorra en costos fijos y haz que tu crecimiento sea más flexible.",
+      "button": "Empieza Ahora",
+      "card1Header": "DESARROLLO DE APPS",
+      "card1SubHeader": "en 6-8 semanas",
+      "card2Header": "DESARROLLO DE APPS",
+      "card2SubHeader": "en 6-8 semanas",
+      "card3Header": "DESARROLLO DE APPS",
+      "card3SubHeader": "en 6-8 semanas",
+      "row1": "LA MEJOR TECNOLOGÍA",
+      "row2": "EL TALENTO ESTÁ EN",
+      "btnLable": "Empieza Ahora"
+    },
+    "freelancer": {
+      "sectionLable": "Para Freelancers",
+      "subHeader": "El hogar del ",
+      "specialSubHeader": "Freelancing",
+      "paragraph": "Encuentra proyectos que se adapten a tu talento. Somos la primera comunidad de trabajadores independientes que prioriza el talento.",
+      "button": "Empieza Ahora",
+      "card1Header": "DESARROLLO DE APPS",
+      "card1SubHeader": "habilidades: Desarrollador Flutter",
+      "card2Header": "Campaña de Marketing",
+      "card2SubHeader": "habilidades: Marketing Digital",
+      "card3Header": "DISEÑO WEB",
+      "card3SubHeader": "habilidades: Diseño UX/UI",
+      "row1": "LA MEJOR TECNOLOGÍA",
+      "row2": "EL TALENTO ESTÁ EN",
+      "btnLable": "Empieza Ahora"
+    },
+    "manager": {
+      "sectionLable": "Para Gestores",
+      "subHeader": "Tu Socio Estratégico de Proyectos ",
+      "specialSubHeader": "Partner",
+      "paragraph": "Maximiza la eficiencia. Asegura el éxito. Los gestores de cuentas dedicados de Yalla garantizan un flujo de proyecto sin problemas para que puedas concentrarte en el crecimiento.",
+      "button": "Empieza a Gestionar Ahora",
+      "card1Header": "Expertos en Marketing Digital",
+      "card1SubHeader": "Aprovecha estrategias basadas en datos y campañas dirigidas para maximizar la visibilidad del proyecto y la participación de los usuarios.",
+      "card2Header": "Diseño de Producto",
+      "card2SubHeader": "Transforma conceptos en diseños centrados en el usuario que eleven el atractivo y la usabilidad del producto.",
+      "card3Header": "Desarrollo de Software",
+      "card3SubHeader": "Proporciona soluciones de software escalables y fiables adaptadas a los requisitos del proyecto y las necesidades de los usuarios.",
+      "row1": "Dirige proyectos y conéctate con",
+      "row2": "los mejores jugadores de la industria en",
+      "btnLable": "Empieza Ahora"
+    },
+    "headerFooter": {
+      "home": "Inicio",
+      "about": "Sobre Nosotros",
+      "contact": "Contáctanos",
+      "forBusiness": "Para Empresas",
+      "forFreelancers": "Para Freelancers",
+      "forManagers": "Para Gestores",
+      "footerText": "DÉJANOS IMPULSAR TU",
+      "text1": "IDEA",
+      "text2": "PROYECTO",
+      "text3": "STARTUP",
+      "text4": "VISIÓN",
+      "download": "Descarga la App",
+      "btn": "EMPIEZA AHORA"
+    }
+  }
+  

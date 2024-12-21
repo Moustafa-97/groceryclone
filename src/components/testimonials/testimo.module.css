@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image{
+  width: 50%;
+}
+.content {
+  width: 50%;
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+.content h2 {
+  font-family: var(--urbanist);
+  font-size: 67px;
+  font-weight: 600;
+  line-height: 92px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.content h2 span {
+  position: relative;
+  z-index: 20;
+  color: #fff;
+  text-wrap: nowrap;
+}
+.content h2 span::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 120%;
+  background-color: rgba(128, 10, 174, 1);
+  top: -5%;
+  left: -5%;
+  z-index: -1;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transform: rotateZ(3deg);
+  -webkit-transform: rotateZ(3deg);
+  -moz-transform: rotateZ(3deg);
+  -ms-transform: rotateZ(3deg);
+  -o-transform: rotateZ(3deg);
+}
+.content p {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+  .content h2 {
+    font-family: var(--urbanist);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 43px;
+    text-align: left;
+  }
+}

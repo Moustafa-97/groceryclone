@@ -1,0 +1,21 @@
+.qualitySection {
+    width: 86%;
+    height: fit-content;
+    position: relative;
+    min-height: fit-content;
+    margin: 124 auto;
+  }
+  .featured {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    min-height: fit-content;
+    margin: 124 auto;
+  }
+  @media screen and (max-width: 768px) {
+    .qualitySection {
+      width: 92%;
+      margin: 57px auto 92px auto;
+    }
+  }
+  

@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: fit-content;
+  min-height: 450px;
+  background: rgba(20, 20, 20, 1);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+.links .navigation ul {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  color: #fff;
+}
+.links .social ul {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  color: #fff;
+}
+.contact {
+  color: #fff;
+  display: flex;
+  gap: 32px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+.contact p {
+  font-family: var(--urbanist);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .links .navigation ul {
+    flex-direction: column;
+  
+  }
+}
