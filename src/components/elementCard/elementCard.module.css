@@ -12,6 +12,7 @@
 }
 .image img {
   width: 100%;
+  max-width: 120px;
   height: auto;
   max-height: 144px;
 }

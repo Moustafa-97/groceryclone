@@ -41,6 +41,7 @@
 .image img {
   width: 100%;
   aspect-ratio: 1;
+  max-width: 120px;
 }
 .item h2 {
   font-family: var(--quicksand);
