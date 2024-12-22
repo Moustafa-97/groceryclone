@@ -9,7 +9,7 @@ import coffee from "../../../../public/hero/coffee.png";
 import { useTranslations } from "use-intl";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { ScreenBreakpoints } from "../../../../grocery/src/Utils/screenBreakPoints/ScreenBreakPoints";
+import { ScreenBreakpoints } from "../../../../src/Utils/screenBreakPoints/ScreenBreakPoints";
 function HeroHome() {
   const t = useTranslations("homeHero");
   const { isDesktop, isTablet } = ScreenBreakpoints();
