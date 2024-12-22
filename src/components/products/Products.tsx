@@ -38,17 +38,105 @@ export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const items = [
-    { id: 1, title: t("peach"), image: peach, category: "Vegetable", price: 152, owner: "John Doe", stars: 4 },
-    { id: 2, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 3, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 4, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 5, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 6, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 7, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 8, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 9, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 10, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
-    { id: 11, title: t("peach"), image: peach, category: "Fruits", price: 152, owner: "John Doe", stars: 4 },
+    {
+      id: 1,
+      title: t("peach"),
+      image: peach,
+      category: "Vegetable",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 2,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 3,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 4,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 5,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 6,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 7,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 8,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 9,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 10,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
+    {
+      id: 11,
+      title: t("peach"),
+      image: peach,
+      category: "Fruits",
+      price: 152,
+      owner: "John Doe",
+      stars: 4,
+    },
   ];
 
   const filteredItems =
@@ -62,13 +150,22 @@ export default function Products() {
         <h2>Featured Products</h2>
         <div className={styles.filterList}>
           <ul>
-            {["All", "Vegetable", "Fruits", "Coffee & Tea", "Meat"].map((category) => (
-              <li key={category} onClick={() => setSelectedCategory(category)}>
-                <p className={selectedCategory === category ? styles.activeFilter : ""}>
-                  {category}
-                </p>
-              </li>
-            ))}
+            {["All", "Vegetable", "Fruits", "Coffee & Tea", "Meat"].map(
+              (category) => (
+                <li
+                  key={category}
+                  onClick={() => setSelectedCategory(category)}
+                >
+                  <p
+                    className={
+                      selectedCategory === category ? styles.activeFilter : ""
+                    }
+                  >
+                    {category}
+                  </p>
+                </li>
+              )
+            )}
           </ul>
         </div>
       </div>
@@ -76,7 +173,10 @@ export default function Products() {
         <div className={styles.navWrapper}>
           <div ref={sliderRef} className="keen-slider">
             {filteredItems.map((item) => (
-              <div key={item.id} className={`keen-slider__slide ${styles.item}`}>
+              <div
+                key={item.id}
+                className={`keen-slider__slide ${styles.item}`}
+              >
                 <ElementCard {...item} />
               </div>
             ))}
@@ -86,13 +186,18 @@ export default function Products() {
           <>
             <Arrow
               left
-              onClick={(e: any) => e.stopPropagation() || instanceRef.current?.prev()}
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
               disabled={currentSlide === 0}
             />
             <Arrow
-              onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
               disabled={
-                currentSlide === instanceRef.current.track.details.slides.length - 1
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
               }
             />
           </>
@@ -102,12 +207,18 @@ export default function Products() {
   );
 }
 
-function Arrow(props: { disabled: boolean; left?: boolean; onClick: (e: any) => void }) {
+function Arrow(props: {
+  disabled: boolean;
+  left?: boolean;
+  onClick: (e: any) => void;
+}) {
   const disabled = props.disabled ? styles.arrowDisabled : "";
   return (
     <svg
       onClick={props.onClick}
-      className={`${styles.arrow} ${props.left ? styles.arrowLeft : styles.arrowRight} ${disabled}`}
+      className={`${styles.arrow} ${
+        props.left ? styles.arrowLeft : styles.arrowRight
+      } ${disabled}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -146,4 +257,3 @@ function Arrow(props: { disabled: boolean; left?: boolean; onClick: (e: any) => 
     </svg>
   );
 }
-

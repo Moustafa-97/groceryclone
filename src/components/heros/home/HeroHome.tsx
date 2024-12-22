@@ -7,9 +7,23 @@ import basket from "../../../../public/hero/basket.png";
 import tea from "../../../../public/hero/tea.png";
 import coffee from "../../../../public/hero/coffee.png";
 import { useTranslations } from "use-intl";
-
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import { ScreenBreakpoints } from "../../../../grocery/src/Utils/screenBreakPoints/ScreenBreakPoints";
 function HeroHome() {
   const t = useTranslations("homeHero");
+  const { isDesktop, isTablet } = ScreenBreakpoints();
+
+  const [ref] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    slides: {
+      origin: "center",
+      perView: 3,
+      spacing: 15,
+    },
+    vertical: isDesktop || isTablet ? true : false,
+  });
+
   const products: {
     id: number;
     image: string | StaticImageData | any;
@@ -33,6 +47,18 @@ function HeroHome() {
       image: coffee,
       title: t("coffee"),
       price: 20,
+    },
+    {
+      id: 4,
+      image: basket,
+      title: t("coffee"),
+      price: 20,
+    },
+    {
+      id: 5,
+      image: tea,
+      title: t("grocery_basket"),
+      price: 100,
     },
   ];
   const [selectedImg, setSelectedImg] = useState<string | StaticImageData>(
@@ -61,21 +87,26 @@ function HeroHome() {
           </div>
 
           <div className={styles.hero_imageContainer}>
-            {products.map((product) => (
-              <div key={product.id} className={styles.hero_image}>
-                <Image
-                  onClick={() =>
-                    handleManageState(
-                      product.image,
-                      product.price,
-                      product.title
-                    )
-                  }
-                  src={product.image}
-                  alt={product.title}
-                />
-              </div>
-            ))}
+            <div ref={ref} className="keen-slider" style={{ height: 300 }}>
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                  className={`keen-slider__slide ${styles.hero_image}`}
+                >
+                  <Image
+                    onClick={() =>
+                      handleManageState(
+                        product.image,
+                        product.price,
+                        product.title
+                      )
+                    }
+                    src={product.image}
+                    alt={product.title}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className={styles.hero_bottom_container}>
