@@ -40,6 +40,7 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
 .item {
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -118,6 +119,10 @@
 
 .arrowDisabled {
   fill: rgba(255, 255, 255, 0.5);
+}
+.activeFilter{
+  font-weight: bold;
+  color: rgba(128, 10, 174, 1);
 }
 
 @media screen and (max-width: 768px) {

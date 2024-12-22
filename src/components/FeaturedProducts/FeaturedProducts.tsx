@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./featuredProd.module.css";
 
 import { useTranslations } from "next-intl";
@@ -8,6 +8,8 @@ import ElementCard from "../elementCard/ElementCard";
 
 export default function FeaturedProducts() {
   const t = useTranslations("explore");
+
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const items = [
     {
@@ -140,12 +142,21 @@ export default function FeaturedProducts() {
       id: 15,
       title: t("peach"),
       image: peach,
-      category: "Fruits",
+      category: "Vegetable",
       price: 152,
       owner: "John Doe",
       stars: 4,
     },
+    
   ];
+
+  const handleFilter = (category: string) => {
+    setSelectedCategory(category);
+  };
+
+  const filteredItems = selectedCategory === "All"
+    ? items
+    : items.filter((item) => item.category === selectedCategory);
 
   return (
     <>
@@ -154,26 +165,24 @@ export default function FeaturedProducts() {
           <h2>Featured Products</h2>
           <div className={styles.filterList}>
             <ul>
-              <li>
-                <p>All</p>
-              </li>
-              <li>
-                <p>Vegetable</p>
-              </li>
-              <li>
-                <p>Fruits</p>
-              </li>
-              <li>
-                <p>Coffee & Tea</p>
-              </li>
-              <li>
-                <p>Meat</p>
-              </li>
+              {["All", "Vegetable", "Fruits", "Coffee & Tea", "Meat"].map(
+                (category) => (
+                  <li
+                    key={category}
+                    className={
+                      selectedCategory === category ? styles.active : ""
+                    }
+                    onClick={() => handleFilter(category)}
+                  >
+                    <p>{category}</p>
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </div>
         <div className={styles.products}>
-          {items.map((item) => (
+          {filteredItems.map((item) => (
             <div key={item.id} className={styles.item}>
               <ElementCard {...item} />
             </div>

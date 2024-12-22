@@ -4,8 +4,24 @@ import styles from "./testimo.module.css";
 import testimonial from "@/../public/testimonials/testi.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+// import { useKeenSlider } from "keen-slider/react";
 function Testimo() {
   const t = useTranslations("testimo");
+
+  // const [currentSlide, setCurrentSlide] = React.useState(0);
+  // const [loaded, setLoaded] = useState(false);
+  // const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+  //   initial: 0,
+
+  //   slides: { perView: 1 },
+
+  //   slideChanged(slider) {
+  //     setCurrentSlide(slider.track.details.rel);
+  //   },
+  //   created() {
+  //     setLoaded(true);
+  //   },
+  // });
   return (
     <>
       <div className={styles.container}>
