@@ -121,6 +121,7 @@
   justify-content: center;
   flex-direction: column;
   margin: auto;
+  z-index: 10;
   background-color: rgba(213, 213, 213, 1);
 
   border-radius: 97px;
