@@ -14,9 +14,7 @@ function Wholesale() {
       <div className={styles.container}>
         <div className={styles.header}>
           <h2>
-            {t("titleR1")}
-            <span> {t("titleS")} </span>
-            {t("titleR2")}
+            {t("titleR1")} <span>{t("titleS")}</span> {t("titleR2")}
           </h2>
           <p>{t("paragraph")}</p>
         </div>

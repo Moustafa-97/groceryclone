@@ -25,7 +25,7 @@ function Featured() {
               <h3>{t("card1")}</h3>
             </div>
           </div>
-          <div className={`${styles.featuredItem} ${styles.featuredItemV}`}>
+          <div className={styles.featuredItem}>
             <div className={styles.featuredImage}>
               <Image src={percent} alt="featured" />
             </div>

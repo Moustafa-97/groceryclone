@@ -32,6 +32,9 @@
   text-transform: capitalize;
 }
 .header h2 span {
+  position: relative;
+  z-index: 20;
+  color: #fff;
   font-family: var(--urbanist);
   font-size: 67px;
   font-weight: 600;
@@ -40,6 +43,27 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: capitalize;
+  color: rgba(128, 10, 174, 1);
+}
+.header h2 span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(227, 206, 255, 1);
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transform: rotateZ(3deg);
+  -webkit-transform: rotateZ(3deg);
+  -moz-transform: rotateZ(3deg);
+  -ms-transform: rotateZ(3deg);
+  -o-transform: rotateZ(3deg);
 }
 .header p {
   width: 90%;

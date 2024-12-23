@@ -94,6 +94,20 @@
   margin-bottom: 8px;
   height: 52px;
 }
+.button {
+  width: 223px;
+  height: 45px;
+  top: 1077px;
+  left: 95px;
+  gap: 0px;
+  background-color: rgba(53, 11, 69, 1);
+  color: #fff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
 
 .map {
   width: 60%;

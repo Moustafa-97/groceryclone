@@ -18,11 +18,11 @@ function Save() {
     initial: 0,
     breakpoints: {
       "(min-width: 1024px)": {
-        slides: { perView: 2, spacing: 10 },
+        slides: { perView: 2, spacing: 25 },
       },
 
       "(min-width: 1440px)": {
-        slides: { perView: 3, spacing: 5 },
+        slides: { perView: 3, spacing: 25 },
       },
     },
     slides: { perView: 1 },

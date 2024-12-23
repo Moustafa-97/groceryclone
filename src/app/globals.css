@@ -27,6 +27,12 @@ a {
   text-decoration: none;
 }
 
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 input:focus {
   border-color: rgba(131, 15, 176, 1);
   box-shadow: 0 0 5px rgba(131, 15, 176, 1); 

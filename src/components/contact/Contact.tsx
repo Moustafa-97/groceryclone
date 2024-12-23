@@ -89,7 +89,7 @@ function Contact() {
                 )}
               </div>
             </div>
-            <button type="submit">Let’s talk!</button>
+            <button className={styles.button} type="submit">Let’s talk!</button>
           </form>
           <div className={styles.map}>
             <Image src={map} alt="map" />
