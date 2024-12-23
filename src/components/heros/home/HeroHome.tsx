@@ -6,6 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import basket from "../../../../public/hero/basket.png";
 import tea from "../../../../public/hero/tea.png";
 import coffee from "../../../../public/hero/coffee.png";
+import heroBg from "../../../../public/hero/HeroBg.jpeg";
 import { useTranslations } from "use-intl";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -74,7 +75,13 @@ function HeroHome() {
   return (
     <>
       <div className={styles.hero}>
-        <div className={styles.hero_bg}></div>
+        {/* <div className={styles.hero_bg}> */}
+          {/* <Image src={heroBg} alt="cat" /> */}
+        {/* </div> */}
+        <div className={styles.hero_bg2}>
+          <Image src={heroBg} alt="cat" />
+        </div>
+
         <div className={styles.hero_center_circle}>
           <div className={styles.hero_center_image}>
             <Image src={selectedImg} alt={"cat"} />

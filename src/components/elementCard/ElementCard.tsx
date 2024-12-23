@@ -11,7 +11,7 @@ interface Props {
   owner: string;
 }
 function ElementCard(props: Props) {
-  const { image, category, title, stars, owner, price } = props;
+  const { image, category, title, stars } = props;
   const filledStars = Math.round(stars);
   return (
     <>
@@ -37,13 +37,13 @@ function ElementCard(props: Props) {
               </span>
             ))}
           </div>
-          <p className={styles.owner}>
+          {/* <p className={styles.owner}>
             By <span>{owner}</span>
           </p>
           <p className={styles.price}>
             $ {price}
             <span className={styles.priceBefore}>${price + 2.99}</span>
-          </p>
+          </p> */}
         </div>
       </div>
     </>

@@ -147,16 +147,15 @@ export default function FeaturedProducts() {
       owner: "John Doe",
       stars: 4,
     },
-    
   ];
 
   const handleFilter = (category: string) => {
     setSelectedCategory(category);
   };
-
-  const filteredItems = selectedCategory === "All"
-    ? items
-    : items.filter((item) => item.category === selectedCategory);
+  const filteredItems =
+    selectedCategory === "All"
+      ? items
+      : items.filter((item) => item.category === selectedCategory);
 
   return (
     <>

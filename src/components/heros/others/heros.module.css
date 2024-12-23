@@ -9,7 +9,7 @@
   position: relative;
 }
 .hero_bg {
-  background-image: url("../../../../public/hero/HeroBg.jpeg");
+  background-image: url("../../../../public/hero/heroBg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -20,7 +20,7 @@
   left: 0;
   z-index: 0;
   opacity: 0.1;
-}
+} */
 
 .hero_container {
   position: relative;
