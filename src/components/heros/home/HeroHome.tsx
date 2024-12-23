@@ -8,22 +8,22 @@ import tea from "../../../../public/hero/tea.png";
 import coffee from "../../../../public/hero/coffee.png";
 import heroBg from "../../../../public/hero/HeroBg.jpeg";
 import { useTranslations } from "use-intl";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-import { ScreenBreakpoints } from "../../../../src/Utils/screenBreakPoints/ScreenBreakPoints";
+// import { useKeenSlider } from "keen-slider/react";
+// import "keen-slider/keen-slider.min.css";
+// import { ScreenBreakpoints } from "../../../../src/Utils/screenBreakPoints/ScreenBreakPoints";
 function HeroHome() {
   const t = useTranslations("homeHero");
-  const { isDesktop, isTablet } = ScreenBreakpoints();
+  // const { isDesktop, isTablet } = ScreenBreakpoints();
 
-  const [ref] = useKeenSlider<HTMLDivElement>({
-    loop: true,
-    slides: {
-      origin: "center",
-      perView: 3,
-      spacing: 15,
-    },
-    vertical: isDesktop || isTablet ? true : false,
-  });
+  // const [ref] = useKeenSlider<HTMLDivElement>({
+  //   loop: true,
+  //   slides: {
+  //     origin: "center",
+  //     perView: 3,
+  //     spacing: 15,
+  //   },
+  //   vertical: isDesktop || isTablet ? true : false,
+  // });
 
   const products: {
     id: number;
@@ -94,11 +94,12 @@ function HeroHome() {
           </div>
 
           <div className={styles.hero_imageContainer}>
-            <div ref={ref} className="keen-slider" style={{ height: 300 }}>
+            {/* <div ref={ref} className="keen-slider" style={{ height: 300 }}> */}
+              {/* keen-slider__slide */}
               {products.map((product) => (
                 <div
                   key={product.id}
-                  className={`keen-slider__slide ${styles.hero_image}`}
+                  className={` ${styles.hero_image}`}
                 >
                   <Image
                     onClick={() =>
@@ -113,7 +114,7 @@ function HeroHome() {
                   />
                 </div>
               ))}
-            </div>
+            {/* </div> */}
           </div>
         </div>
         <div className={styles.hero_bottom_container}>
