@@ -76,7 +76,7 @@ function HeroHome() {
     <>
       <div className={styles.hero}>
         {/* <div className={styles.hero_bg}> */}
-          {/* <Image src={heroBg} alt="cat" /> */}
+        {/* <Image src={heroBg} alt="cat" /> */}
         {/* </div> */}
         <div className={styles.hero_bg2}>
           <Image src={heroBg} alt="cat" />
