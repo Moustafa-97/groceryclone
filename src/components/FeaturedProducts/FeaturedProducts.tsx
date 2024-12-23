@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./featuredProd.module.css";
 
 import { useTranslations } from "next-intl";
-import peach from "@/../public/explore/peach.png";
+import peach from "../../../public/explore/peach.png";
 import ElementCard from "../elementCard/ElementCard";
 
 export default function FeaturedProducts() {
