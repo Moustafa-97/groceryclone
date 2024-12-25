@@ -78,7 +78,23 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 12px;
+  gap: 32px;
+}
+.item h4 {
+  font-family: var(--urbanist);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: left;
+  color: #161b20;
+}
+.item p {
+  font-family: var(--urbanist);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #666666;
 }
 .arrows {
   display: flex;
@@ -134,6 +150,16 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 43px;
+    text-align: left;
+  }
+.item{
+  gap:12px;
+}
+  .item h4 {
+    font-family: var(--urbanist);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
     text-align: left;
   }
 
