@@ -18,7 +18,7 @@ function Navbar() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (document.readyState === "complete") setMounted(true);
+    if (document.readyState === "complete" && typeof window !== 'undefined') setMounted(true);
   }, []);
 
   const handleClickOutsideMenu = (event: MouseEvent) => {
@@ -198,20 +198,20 @@ function Navbar() {
                 </li>
                 <li
                   className={
-                    path === `/${locale}/for_freelancers`
+                    path === `/${locale}/contact`
                       ? `${styles.bgCurved}`
                       : ""
                   }
                   style={
-                    path === `/${locale}/for_freelancers`
+                    path === `/${locale}/contact`
                       ? { background: "var(--Indigo-300)" }
                       : {}
                   }
                 >
                   <Link
-                    href={`/${locale}/for_freelancers`}
+                    href={`/${locale}/contact`}
                     style={
-                      path === `/${locale}/for_freelancers`
+                      path === `/${locale}/contact`
                         ? { color: "var(--neutral-1)" }
                         : { color: "var(--Indigo-300)" }
                     }
