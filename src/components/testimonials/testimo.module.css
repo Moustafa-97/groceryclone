@@ -137,4 +137,9 @@
     line-height: 43px;
     text-align: left;
   }
+  
+  
+.sliderContainer{
+  display: none;
+}
 }
