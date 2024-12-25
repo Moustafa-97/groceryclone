@@ -22,7 +22,7 @@
 }
 .navbarLinks {
   width: 50%;
-  justify-self: flex-start;
+  justify-self: center;
 }
 .navbarLinks ul {
   list-style-type: none;
@@ -30,8 +30,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  text-align: center;
+}
+.navbarLinks ul li {
+  text-align: center;
+  margin: auto;
 }
 .navbarLinks ul li a {
+  text-align: center;
   color: var(--neutral-1);
   font-family: var(--space);
   font-size: 16px;
@@ -41,10 +47,24 @@
   text-wrap: balance;
 }
 .navbarButtons {
+  width: 25%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 22px;
+}
+.navbarButtons a {
+  width: 124px;
+  height: 38px;
+  padding: 8px 26px;
+  text-align: center;
+  gap: 8px;
+  border-radius: 31px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 31px;
+  -moz-border-radius: 31px;
+  -ms-border-radius: 31px;
+  -o-border-radius: 31px;
 }
 .navbarButtons .navbarContact {
   font-family: var(--monta);

@@ -18,7 +18,8 @@ function Navbar() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (document.readyState === "complete" && typeof window !== 'undefined') setMounted(true);
+    if (document.readyState === "complete" && typeof window !== "undefined")
+      setMounted(true);
   }, []);
 
   const handleClickOutsideMenu = (event: MouseEvent) => {
@@ -86,19 +87,19 @@ function Navbar() {
                   {t("products")}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href={`/${locale}/contact`}
-                  style={
-                    path === `/${locale}/contact`
-                      ? { color: "var(--Indigo-300)" }
-                      : { color: "var(--neutral-1)" }
-                  }
-                >
-                  {t("contact")}
-                </Link>
-              </li>
             </ul>
+          </div>
+          <div className={styles.navbarButtons}>
+            <Link
+              href={`/${locale}/contact`}
+              style={
+                path === `/${locale}/contact`
+                  ? { color: "var(--Indigo-300)" }
+                  : { color: "var(--neutral-1)" }
+              }
+            >
+              {t("contact")}
+            </Link>
           </div>
           <div className={styles.navbarResponsive} onClick={toggleMenu}>
             <svg
@@ -174,9 +175,7 @@ function Navbar() {
                 </li>
                 <li
                   className={
-                    path === `/${locale}/products`
-                      ? `${styles.bgCurved}`
-                      : ""
+                    path === `/${locale}/products` ? `${styles.bgCurved}` : ""
                   }
                   style={
                     path === `/${locale}/products`
@@ -198,9 +197,7 @@ function Navbar() {
                 </li>
                 <li
                   className={
-                    path === `/${locale}/contact`
-                      ? `${styles.bgCurved}`
-                      : ""
+                    path === `/${locale}/contact` ? `${styles.bgCurved}` : ""
                   }
                   style={
                     path === `/${locale}/contact`
