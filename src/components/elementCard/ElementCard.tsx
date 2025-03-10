@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React from "react";
 import styles from "./elementCard.module.css";
-interface Props {
-  image: string | StaticImageData;
-  category: string;
-  name: string;
-}
-function ElementCard(props: Props) {
+// interface Props {
+//   image: string | StaticImageData;
+//   category: string;
+//   name: string;
+// }
+function ElementCard(props: any) {
   const { image, category, name } = props;
   // const filledStars = Math.round(stars);
   const [imageLoaded, setImageLoaded] = React.useState(false);
