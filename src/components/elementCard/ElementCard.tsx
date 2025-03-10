@@ -5,24 +5,29 @@ import styles from "./elementCard.module.css";
 interface Props {
   image: string | StaticImageData;
   category: string;
-  title: string;
-  price: number;
-  stars: number;
-  owner: string;
+  name: string;
 }
 function ElementCard(props: Props) {
-  const { image, category, title, stars } = props;
-  const filledStars = Math.round(stars);
+  const { image, category, name } = props;
+  // const filledStars = Math.round(stars);
+  const [imageLoaded, setImageLoaded] = React.useState(false);
   return (
     <>
       <div className={styles.container}>
         <div className={styles.image}>
-          <Image src={image} alt="" />
+          {!imageLoaded && <p>loading...</p>}
+          <Image
+            onLoad={() => setImageLoaded(true)}
+            src={image}
+            alt="image"
+            width={100}
+            height={100}
+          />
         </div>
         <div className={styles.content}>
           <p className={styles.category}>{category}</p>
-          <h6 className={styles.title}>{title}</h6>
-          <div
+          <h6 className={styles.title}>{name}</h6>
+          {/* <div
             style={{ display: "flex", alignItems: "flex-start", gap: "4px" }}
           >
             {[...Array(stars)].map((_, index) => (
@@ -36,7 +41,7 @@ function ElementCard(props: Props) {
                 ★
               </span>
             ))}
-          </div>
+          </div> */}
           {/* <p className={styles.owner}>
             By <span>{owner}</span>
           </p>
