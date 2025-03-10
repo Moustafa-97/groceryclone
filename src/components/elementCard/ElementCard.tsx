@@ -13,11 +13,12 @@ interface Props {
 function ElementCard(props: Props) {
   const { image, category, title, stars } = props;
   const filledStars = Math.round(stars);
+  
   return (
     <>
       <div className={styles.container}>
         <div className={styles.image}>
-          <Image src={image} alt="" />
+          <Image src={image} alt="image" />
         </div>
         <div className={styles.content}>
           <p className={styles.category}>{category}</p>
