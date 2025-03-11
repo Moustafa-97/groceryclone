@@ -6,10 +6,10 @@ import { useTranslations } from "next-intl";
 import ElementCard from "../elementCard/ElementCard";
 
 export default function FeaturedProducts() {
-  const t = useTranslations("explore");
-
   const [selectedCategory, setSelectedCategory] = useState("All");
-
+  
+  
+  const t = useTranslations("explore");
   const products = [
     {
       name: t("BARBICAN FRESA"),
@@ -622,6 +622,177 @@ export default function FeaturedProducts() {
       category: t("ESPECIAS"),
       image: "https://drive.google.com/uc?id=1uDTHodCIvTS2yVhROdMfcoqHILmPBMcs",
     },
+    {
+      name: t("ÁCIDO CÉNTRICO LÍQUIDO 1L"),
+      category: t("LIQUIDOS"),
+      image: "https://drive.google.com/uc?id=1d0CtRIgy3M1CI-vJ2S1crJJ6ioaJ4w0m",
+    },
+
+    {
+      name: t("AQUA AZAHAR 500ML"),
+      category: t("LIQUIDOS"),
+      image: "https://drive.google.com/uc?id=11srNBkYgJw0dPdqwB_YDQpxLrDCjd1tQ",
+    },
+    {
+      name: t("AQUA DE AZAHAR 250ML"),
+      category: t("LIQUIDOS"),
+      image: "https://drive.google.com/uc?id=1N37j1E1ItO1M4YnRKCSqHtVgFT3pgwJo",
+    },
+    {
+      name: t("AQUA DE ROSA 500 ML"),
+      category: t("LIQUIDOS"),
+      image: "https://drive.google.com/uc?id=1zS6jqxVWTZ5RCoRMYhR6Q66bJOG06IDX",
+    },
+    {
+      name: t("SYRUPE DE DATILES 600G"),
+      category: t("LIQUIDOS"),
+      image: "https://drive.google.com/uc?id=1y7Fyd7ExfgL7k6xAcyNXEpzDOkDAGwPZ",
+    },
+    {
+      name: t("VINAGRE BLANCO 1L"),
+      category: t("LIQUIDOS"),
+      image: "https://drive.google.com/uc?id=1p1QOEsVBW2hMZXZ6u1ZxuB6oH0Nd6ZeQ",
+    },
+    {
+      name: t("MANTEQUILLA 400G"),
+      category: t("MANTEQUILLAS"),
+      image: "https://drive.google.com/uc?id=1NouGjQr0CwW2-tgFaFU9IaWoIfq_wqaf",
+    },
+    {
+      name: t("MANTEQUILLA 800G"),
+      category: t("MANTEQUILLAS"),
+      image: "https://drive.google.com/uc?id=1tmacJ3lNfa3cuELXLErYqOHNxu62cLSz",
+    },
+    {
+      name: t("MANTEQUILLA VEGETAL 1KG"),
+      category: t("MANTEQUILLAS"),
+      image: "https://drive.google.com/uc?id=1a8t5Rat7GeMeniMs121aO6EegPtxuA5E",
+    },
+    {
+      name: t("MANTEQUILLA VEGETAL 500G"),
+      category: t("MANTEQUILLAS"),
+      image: "https://drive.google.com/uc?id=1BeFAHDQitwzaf_ecSC-SlnV2VnLanigs",
+    },
+    {
+      name: t("FALAFEL MIX 175G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1p6cqdiYLb6KRYB6Dt5gLMlFN41fkRIg3",
+    },
+    {
+      name: t("FALAFEL MIX 375G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1bhJ0mMujxztd2WMAuCmd9INRoXoaQdnd",
+    },
+    {
+      name: t("FRIKHE 450G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1kvXrHGwPCzkqQtEW05FsYiZkTBXUbue-",
+    },
+    {
+      name: t("FRIKHE 800G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1jsfQAFvtuCHtyYEjFfiHxwc0FZkox2JX",
+    },
+    {
+      name: t("INDOMIE POLLO"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1-smj7yvjbVoNhWOz69tCgFE8PLnBat4l",
+    },
+    {
+      name: t("INDOMIE VERDURA"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1Bqa0Z1OSlNVuxWiz_76PXowoUfsKluXq",
+    },
+    {
+      name: t("KAAK SHAMI 400G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=11wJ1QxgyHpYOQukEgDgSJRT7ov9k1A7c",
+    },
+    {
+      name: t("MELUKIA 200G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1TJzlyFpvsnhn5jgrC1sF8pJEhQzRMU0X",
+    },
+    {
+      name: t("MELUKIA 200G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1pF5BQI9yR-FlVi02utXZeIxqKuMhbA8z",
+    },
+    {
+      name: t("PASTA DE DÁTILES 800G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1lqiI-9VpMWpYOPqhKzBSwl9EvQh05VON",
+    },
+    {
+      name: t("PASTA DE DÁTILES 900G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1EuOvRoeCX04MnlTQQYqzxoQYH7V_jpGi",
+    },
+    {
+      name: t("PATATA CHIPS"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1YxC2G21uDr8p7ATjpQ3MbPCafHYo0zJ5",
+    },
+    {
+      name: t("PIPAS SAMIR 300G"),
+      category: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1xVYOLooIwe_fN4L6EFSQvR0aa-AOnDy6",
+    },
+    {
+      name: t("SALSA DE GRANADA 1L"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=13qHRecdMMlmwbcPO3GregQUYn89cEVMJ",
+    },
+    {
+      name: t("SALSA DE GRANADA 500ML"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1IO-EEfXw0HDKOId3IlIrjkIJogjM-3Mj",
+    },
+    {
+      name: t("SALSA DE PIMENTO PICANTE 430G"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1REAl2C6nRK2vDuRL0JHRE673fpALr3Ay",
+    },
+    {
+      name: t("SALSA DE PIMENTO PICANTE 660G"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1jRaxl6Lk6mzgz2XL8bOjs1QW3IteaZUX",
+    },
+    {
+      name: t("SALSA PICANTE 180G"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1jhQhxlF9HWXXHmX6P3rKucF0s04gbSXu",
+    },
+    {
+      name: t("SALSA PICANTE 340G"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=10adtnbvhUnxYoGrS4bQM4tuBMmwujfIp",
+    },
+    {
+      name: t("SALSA PICANTE 700G"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=17ioWmU_3bdPh6Pyc9jjQiBwYRlpno5HV",
+    },
+    {
+      name: t("SYRUPE DE DÁTILES 400G"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1LOgn3lSAjJxv134hImJYRxvdHGkpRe2B",
+    },
+    {
+      name: t("SYRUPE DE DÁTILES 430G"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1XGzESPIDMQ7exPA6z-a5wuvPLuyyOk-X",
+    },
+    {
+      name: t("ZUMO DE GRANADA 1L"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1fAbfmXcXe3biGj1fkRbcjHNKfFYHgPGL",
+    },
+    {
+      name: t("ZUMO DE GRANADA 425G"),
+      category: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1nphxAwH1lRNj0QESfZLBZzA2PeXLnd3d",
+    },
   ];
 
   const categories = [
@@ -634,6 +805,7 @@ export default function FeaturedProducts() {
     t("DUCLES&POSTRES"),
     t("ESPECIAS"),
     t("LÁCTEOS"),
+    t("LIQUIDOS"),
   ];
 
   const handleFilter = (category: string) => {
@@ -651,19 +823,15 @@ export default function FeaturedProducts() {
           <h2>Featured Products</h2>
           <div className={styles.filterList}>
             <ul>
-              {categories.map(
-                (category) => (
-                  <li
-                    key={category}
-                    className={
-                      selectedCategory === category ? styles.active : ""
-                    }
-                    onClick={() => handleFilter(category)}
-                  >
-                    <p>{category}</p>
-                  </li>
-                )
-              )}
+              {categories.map((category) => (
+                <li
+                  key={category}
+                  className={selectedCategory === category ? styles.active : ""}
+                  onClick={() => handleFilter(category)}
+                >
+                  <p>{category}</p>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

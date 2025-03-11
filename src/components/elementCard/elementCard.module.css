@@ -3,9 +3,8 @@
 }
 .image {
   width: 100%;
-  height: auto;
-  max-height: 144px;
-  aspect-ratio: 1;
+  height: 65%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,9 +13,11 @@
   width: 100%;
   max-width: 120px;
   height: auto;
-  max-height: 144px;
+  
+  object-fit: cover;
 }
 .content {
+  height: 35%;
   width: 100%;
   background-color: rgba(238, 236, 236, 1);
   padding: 10px;

@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React, { useState } from "react";
-import peach from "@/../public/explore/peach.png";
 import { useTranslations } from "next-intl";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -38,50 +37,50 @@ function Explore() {
   const items = [
     {
       id: 1,
-      title: t("BEBIDAS"),
-      image: peach,
+      title: t("SALSAS"),
+      image: "https://drive.google.com/uc?id=1jhQhxlF9HWXXHmX6P3rKucF0s04gbSXu",
       item: 152,
     },
     {
       id: 2,
-      title: t("BEBIDAS"),
-      image: peach,
+      title: t("OTROS"),
+      image: "https://drive.google.com/uc?id=1YxC2G21uDr8p7ATjpQ3MbPCafHYo0zJ5",
       item: 152,
     },
     {
       id: 3,
-      title: t("BEBIDAS"),
-      image: peach,
+      title: t("MANTEQUILLAS"),
+      image: "https://drive.google.com/uc?id=1a8t5Rat7GeMeniMs121aO6EegPtxuA5E",
       item: 152,
     },
     {
       id: 4,
-      title: t("BEBIDAS"),
-      image: peach,
+      title: t("LIQUIDOS"),
+      image: "https://drive.google.com/uc?id=1zS6jqxVWTZ5RCoRMYhR6Q66bJOG06IDX",
       item: 152,
     },
     {
       id: 5,
-      title: t("BEBIDAS"),
-      image: peach,
+      title: t("ESPECIAS"),
+      image: "https://drive.google.com/uc?id=1_UQGc6gTG_m2C6nnWyIUhkpJo5efGjEm",
       item: 152,
     },
     {
       id: 6,
-      title: t("BEBIDAS"),
-      image: peach,
+      title: t("DUCLES&POSTRES"),
+      image: "https://drive.google.com/uc?id=1_dLzRGt-xDwvVAcnrPE_y5JKVNeLWo9Q",
       item: 152,
     },
     {
       id: 7,
-      title: t("BEBIDAS"),
-      image: peach,
+      title: t("CONSERVAS"),
+      image: "https://drive.google.com/uc?id=1REAl2C6nRK2vDuRL0JHRE673fpALr3Ay",
       item: 152,
     },
     {
       id: 8,
       title: t("BEBIDAS"),
-      image: peach,
+      image: "https://drive.google.com/uc?id=1ZCZ4055WFMh6uE07abocE2thnl5YzmPk",
       item: 152,
     },
   ];
@@ -100,7 +99,7 @@ function Explore() {
                   className={`keen-slider__slide ${styles.item}`}
                 >
                   <div className={styles.image}>
-                    <Image src={item.image} alt={item.title} />
+                    <Image width={100} height={100} src={item.image} alt={item.title} />
                   </div>
                   <div className={styles.text}>
                     <h2 className={styles.title}>{item.title}</h2>
