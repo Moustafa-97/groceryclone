@@ -180,3 +180,76 @@
     right: 0;
   }
 }
+
+/* Language Button Styles */
+.languageButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border: 2px solid #fff;
+  border-radius: 31px;
+  background-color: transparent;
+  color: var(--neutral-1);
+  font-family: var(--monta);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.languageButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.languageButton:active {
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+}
+
+.globeIcon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Mobile Language Button */
+.mobileLanguageButton {
+  width: 100%;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 15px;
+}
+
+.mobileLanguageButton .languageButton {
+  border: none;
+  background-color: var(--Indigo-300);
+  color: var(--neutral-1);
+  padding: 8px 20px;
+  font-size: 16px;
+}
+
+.mobileLanguageButton .languageButton:hover {
+  background-color: var(--Indigo-400);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .navbarButtons .languageButton {
+    display: none;
+  }
+}
